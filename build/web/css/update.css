@@ -1,0 +1,121 @@
+body {
+    font: 14px Arial, Helvetica, sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+
+}
+
+.main {
+
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: auto;
+}
+
+.left-pane {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 50px;
+    height: 100%;
+    background-color: #3a72a4;
+    color: white;
+}
+
+.right-pane {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+    height: 100%;
+    flex: 4.5;
+    padding-top: 50px;
+}
+
+.update-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.update-info .title {
+    font-size: 15px;
+    width: 100px;
+}
+
+.update-info input {
+    color: #5f5f5f;
+    width: 380px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 15px 20px;
+    border: 1px solid #dbdbdb;
+    margin: 5px;
+}
+
+.form-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border-radius: 2px;
+    background-color:  #3a72a4;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.left-pane .logout {
+    border-radius: 2px;
+    background-color:  white;
+    color: #3a72a4;
+    font-weight: bold;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+@media (max-width: 600px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .left-pane {
+        display: flex;
+        background-color: #3a72a4;
+        color: white;
+        padding-top: 10px;
+    }
+
+    .right-pane {
+        display: flex;
+        flex-direction: column;
+        background-color: #f1f1f1;
+    }
+
+    .update-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }	
+
+    .update-info input {
+        width: 250px;
+    }
+
+    .right-pane .title {
+        display: none;
+    }
+
+}
